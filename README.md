@@ -1,9 +1,9 @@
 # Multimodal Insider Threat Detection System
 
-This project implements an **early-warning insider threat detection engine** using **multimodal enterprise telemetry** from the CERT dataset.
+This project implements an early-warning insider threat detection engine using multimodal enterprise telemetry from the CERT dataset.
 
 ## What it does
-The system predicts whether a user will become an insider threat **up to 7 days before data exfiltration**, using:
+The system predicts whether a user will become an insider threat up to 7 days before data exfiltration, using:
 - Login behavior
 - File access
 - USB usage
@@ -12,7 +12,7 @@ The system predicts whether a user will become an insider threat **up to 7 days 
 - Temporal behavior modeling (LSTM)
 
 ## Model
-A **7-day LSTM sequence model** learns behavioral drift and attack build-up.
+A 7-day LSTM sequence model learns behavioral drift and attack build-up.
 
 ## Performance
 On 1.39M user-days:
