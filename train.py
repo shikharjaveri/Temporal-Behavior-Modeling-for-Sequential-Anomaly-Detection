@@ -39,7 +39,7 @@ def main(args):
     scaler = MinMaxScaler()
     X_scaled = scaler.fit_transform(X)
 
-    X_train, X_val = train_test_split(X_scaled, test_size=0.2, random_state=42)
+    X_train, X_val = train_test_split(X_scaled, test_size=0.2, random_state=136)
 
     train_dataset = TensorDataset(torch.tensor(X_train, dtype=torch.float32))
     val_dataset = TensorDataset(torch.tensor(X_val, dtype=torch.float32))
